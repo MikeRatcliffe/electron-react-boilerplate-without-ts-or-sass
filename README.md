@@ -1,6 +1,9 @@
 <img src=".erb/img/erb-banner.svg" width="100%" />
 
 <br>
+<br>
+
+> **NOTE: This is a fork of the awesome [electron-react-boilerplate](https://github.com/electron-react-boilerplate/) without TypeScript And Sass support.**
 
 <p>
   Electron React Boilerplate uses <a href="https://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="https://webpack.js.org/">Webpack</a> and <a href="https://www.npmjs.com/package/react-refresh">React Fast Refresh</a>.
@@ -25,12 +28,12 @@
 Clone the repo and install dependencies:
 
 ```bash
-git clone --depth 1 --branch main https://github.com/electron-react-boilerplate/electron-react-boilerplate.git your-project-name
+git clone --depth 1 --branch main https://github.com/MikeRatcliffe/electron-react-boilerplate-without-ts-or-sass.git your-project-name
 cd your-project-name
 npm install
 ```
 
-**Having issues installing? See our [debugging guide](https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues/400)**
+**Having issues installing? See our [debugging guide](https://github.com/MikeRatcliffe/electron-react-boilerplate-without-ts-or-sass/issues/400)**
 
 ## Starting Development
 
@@ -151,9 +154,9 @@ Become a sponsor and get your logo on our README on Github with a link to your s
 
 MIT © [Electron React Boilerplate](https://github.com/electron-react-boilerplate)
 
-[github-actions-status]: https://github.com/electron-react-boilerplate/electron-react-boilerplate/workflows/Test/badge.svg
-[github-actions-url]: https://github.com/electron-react-boilerplate/electron-react-boilerplate/actions
+[github-actions-status]: https://github.com/MikeRatcliffe/electron-react-boilerplate-without-ts-or-sass/workflows/Test/badge.svg
+[github-actions-url]: https://github.com/MikeRatcliffe/electron-react-boilerplate-without-ts-or-sass/actions
 [github-tag-image]: https://img.shields.io/github/tag/electron-react-boilerplate/electron-react-boilerplate.svg?label=version
-[github-tag-url]: https://github.com/electron-react-boilerplate/electron-react-boilerplate/releases/latest
+[github-tag-url]: https://github.com/MikeRatcliffe/electron-react-boilerplate-without-ts-or-sass/releases/latest
 [stackoverflow-img]: https://img.shields.io/badge/stackoverflow-electron_react_boilerplate-blue.svg
 [stackoverflow-url]: https://stackoverflow.com/questions/tagged/electron-react-boilerplate

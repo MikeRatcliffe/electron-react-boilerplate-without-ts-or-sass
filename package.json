@@ -8,13 +8,13 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/MikeRatcliffe/electron-react-boilerplate-without-ts-or-sass#readme",
   "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
+    "url": "https://github.com/MikeRatcliffe/electron-react-boilerplate-without-ts-or-sass/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/MikeRatcliffe/electron-react-boilerplate-without-ts-or-sass.git"
   },
   "license": "MIT",
   "author": {
