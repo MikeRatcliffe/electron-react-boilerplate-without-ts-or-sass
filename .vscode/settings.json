@@ -4,17 +4,11 @@
     ".prettierrc": "jsonc",
     ".eslintignore": "ignore"
   },
-  
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "html",
-    "typescriptreact"
-  ],
+
+  "eslint.validate": ["javascript", "javascriptreact", "html"],
 
   "javascript.validate.enable": false,
   "javascript.format.enable": false,
-  "typescript.format.enable": false,
 
   "search.exclude": {
     ".git": true,
@@ -24,7 +18,6 @@
     "node_modules": true,
     "npm-debug.log.*": true,
     "test/**/__snapshots__": true,
-    "package-lock.json": true,
-    "*.{css,sass,scss}.d.ts": true
+    "package-lock.json": true
   }
 }

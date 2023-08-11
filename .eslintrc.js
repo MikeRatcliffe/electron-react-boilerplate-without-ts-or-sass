@@ -1,6 +1,19 @@
 module.exports = {
-  extends: 'erb',
-  plugins: ['@typescript-eslint'],
+  env: {
+    es6: true,
+    node: true,
+    browser: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:import/recommended',
+    'plugin:jest/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:promise/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+  ],
+  plugins: ['html', 'prettier'],
   rules: {
     // A temporary hack related to IDE not resolving correct package.json
     'import/no-extraneous-dependencies': 'off',
@@ -10,28 +23,22 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/no-import-module-exports': 'off',
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': 'error',
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    'no-unused-vars': 'error',
   },
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json',
-    tsconfigRootDir: __dirname,
-    createDefaultProgram: true,
   },
   settings: {
+    react: {
+      version: 'detect',
+    },
     'import/resolver': {
       // See https://github.com/benmosher/eslint-plugin-import/issues/1396#issuecomment-575727774 for line below
       node: {},
       webpack: {
-        config: require.resolve('./.erb/configs/webpack.config.eslint.ts'),
+        config: require.resolve('./.erb/configs/webpack.config.eslint.js'),
       },
-      typescript: {},
-    },
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
   },
 };

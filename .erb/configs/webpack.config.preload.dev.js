@@ -1,10 +1,10 @@
-import path from 'path';
-import webpack from 'webpack';
-import { merge } from 'webpack-merge';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-import baseConfig from './webpack.config.base';
-import webpackPaths from './webpack.paths';
-import checkNodeEnv from '../scripts/check-node-env';
+const path = require('path');
+const webpack = require('webpack');
+const { merge } = require('webpack-merge');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const baseConfig = require('./webpack.config.base');
+const webpackPaths = require('./webpack.paths');
+const checkNodeEnv = require('../scripts/check-node-env');
 
 // When an ESLint server is running, we can't set the NODE_ENV so we'll check if it's
 // at the dev webpack config is not accidentally run in a production environment
@@ -12,14 +12,14 @@ if (process.env.NODE_ENV === 'production') {
   checkNodeEnv('development');
 }
 
-const configuration: webpack.Configuration = {
+const configuration = {
   devtool: 'inline-source-map',
 
   mode: 'development',
 
   target: 'electron-preload',
 
-  entry: path.join(webpackPaths.srcMainPath, 'preload.ts'),
+  entry: path.join(webpackPaths.srcMainPath, 'preload.js'),
 
   output: {
     path: webpackPaths.dllPath,
@@ -68,4 +68,4 @@ const configuration: webpack.Configuration = {
   watch: true,
 };
 
-export default merge(baseConfig, configuration);
+module.exports = merge(baseConfig, configuration);
